@@ -317,6 +317,66 @@ img, svg { max-width: 100%; }
 	color: var(--heading);
 }
 
+.reviews {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 24px;
+}
+
+.review {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 24px;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+.stars {
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: #f5a623;
+}
+.star-off { color: #ddd; }
+
+.review blockquote {
+	flex: 1;
+	margin: 12px 0 20px;
+	font-style: italic;
+	line-height: 1.6;
+}
+
+.review figcaption {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-size: 14px;
+	line-height: 1.4;
+	color: #777;
+}
+.review figcaption strong { color: var(--heading); }
+
+.avatar {
+	display: grid;
+	place-items: center;
+	flex: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: var(--blue);
+	font-weight: 700;
+	color: #fff;
+}
+
+.reviews-note {
+	margin: 24px 0 0;
+	font-size: 14px;
+	text-align: center;
+	color: #777;
+}
+
 /* ---------- Inner pages ---------- */
 
 .page-header {
